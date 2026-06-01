@@ -60,3 +60,5 @@ config.yaml.bak
 /frontend/playwright-report/
 .gstack/
 .worktrees
+package-lock.json
+node_modules
