@@ -17,6 +17,8 @@ import pytest
 # Make 'app' and 'deerflow' importable from any working directory
 sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "scripts"))
+# Learning-path demo package (learning/deerflow_learning)
+sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "learning"))
 
 # Break the circular import chain that exists in production code:
 #   deerflow.subagents.__init__

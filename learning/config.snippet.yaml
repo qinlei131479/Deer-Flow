@@ -1,0 +1,16 @@
+# 合并到 config.yaml 的学习路径工具配置片段
+
+tool_groups:
+  - name: utility
+
+tools:
+  - name: current_time
+    group: utility
+    use: deerflow_learning.tools.current_time_tool:current_time_tool
+
+  - name: learning_greeting
+    group: utility
+    use: deerflow_learning.tools.greeting_tool:greeting_tool
+
+# 注意：运行时需要 PYTHONPATH 包含 learning 目录，例如：
+#   cd backend && PYTHONPATH=.:../learning make dev
